@@ -1,13 +1,14 @@
+/*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(base.svg);
+    background: url(Final/base.svg);
     height: 598px;
     width: 806px;
-        margin-left: -403px;
-        margin-top: -280px;
+    /*    margin-left: -403px;
+        margin-top: -280px;*/
 }
 
 .ds4.disconnected {
-    background: url(disconnected.svg);
+    background: url(Final/disconnected.svg);
 }
 
 .ds4.disconnected div {
@@ -24,7 +25,7 @@
 .ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(triggers.svg);
+    background: url(Final/triggers.svg);
     opacity: 0;
 }
 
@@ -40,7 +41,7 @@
 .ds4 .bumper {
     width: 99px;
     height: 23px;
-    background: url(bumper.svg) no-repeat;
+    background: url(Final/bumper.svg) no-repeat;
     opacity: 0;
 }
 
@@ -57,8 +58,8 @@
 }
 
 .ds4 .bumper.left {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    /* -webkit-transform: rotateY(180deg); */
+    /* transform: rotateY(180deg); */
     float: left;
 }
 
@@ -76,7 +77,7 @@
 }
 
 .ds4 .touchpad.pressed {
-    background: url(touchpad.svg) no-repeat center;
+    background: url(Final/touchpad.svg) no-repeat center;
 }
 
 .ds4 .meta {
@@ -88,30 +89,59 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(meta.svg) no-repeat center;
+    background: url(Final/meta.svg) no-repeat center;
+}
+
+/*Not needed, but I like keeping them here for posterity*/
+/*.ds4 .quadrant{
+position: absolute;
+background: url(ps4-assets/player-n.svg);
+height: 17px;
+width: 111px;
+top: 140px;
+left: 240px;
+}
+.ds4 .p0{
+background-position: 0 -6px;
+}
+.ds4 .p1{
+background-position: 0 -28px;
+}
+.ds4 .p2{
+background-position: 0 -49px;
+}
+.ds4 .p3{
+background-position: 0 -70px;
+}*/
+.ds4 .arrows {
+    position: absolute;
+    width: 352px;
+    height: 46px;
+    top: 142px;
+    left: 227px;
 }
 
 .ds4 .back, .ds4 .start {
-    background: url(start.svg);
+    background: url(Final/start.svg);
     width: 28px;
     height: 46px;
     opacity: 0;
 }
 
 .ds4 .back.pressed, .ds4 .start.pressed {
-    background-position-y: -21px;
-    margin-top: 2px;
+    /* background-position-y: -21px; */
+    /* margin-top: 2px; */
     opacity: 1;
 }
 
 .ds4 .back {
     float: left;
-    width: 28px;
+    /* width: 28px; */
 }
 
 .ds4 .start {
     float: right;
-    width: 28px;
+    /* width: 28px; */
     background-position: 28px 0;
 }
 
@@ -127,12 +157,12 @@
     position: absolute;
     width: 55px;
     height: 55px;
-    background: url(face.svg);
+    background: url(Final/face.svg);
 }
 
 .ds4 .button.pressed {
     background-position-y: 55px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 .ds4 .a {
@@ -167,7 +197,7 @@
 
 .ds4 .stick {
     position: absolute;
-    background: url(sticks.svg);
+    background: url(Final/sticks.svg);
     height: 94px;
     width: 94px;
 }
@@ -199,7 +229,7 @@
 }
 
 .ds4 .face {
-    background: url(dpad.svg);
+    background: url(Final/dpad.svg);
     position: absolute;
 }
 
@@ -238,10 +268,12 @@
 }
 
 .ds4 .face.pressed {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     background-position-y: 52px;
 }
 
 .ds4.half {
     margin-top: -300px;
 }
+
+/*END PS4 Controller Styling*/
